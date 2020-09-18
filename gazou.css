@@ -1,0 +1,46 @@
+@media screen and (min-width: 481px){ 
+    body{
+        text-align:center;
+        background-image: url(retina_wood.png);
+    }
+    img {
+        width: 25%;
+        height: 25%;
+        border-radius: 5px;
+    }
+    h1 {
+        font-family: Arial;
+    }
+    p{
+        padding: 0 25%;
+    }
+    textarea{
+        width: 50%;
+        height: 120px;
+    }
+    .memo-shizi {
+        text-align:center;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        text-align:center;
+        background-image: url(retina_wood.png);
+    }
+    img {
+        width: 75%;
+        height: 75%;
+        border-radius: 5px;
+    }
+    h1 {
+        font-family: Arial;
+    }
+    textarea{
+        width: 94%;
+        height: 120px;
+    }
+    .memo-shizi {
+        text-align:left;
+    }
+    
+}

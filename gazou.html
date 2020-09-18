@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>だなもたぬき</title>
+    <link rel="stylesheet" href="gazou.css">
+</head>
+<body>
+    
+    <h1>だなもたぬきげーむ</h1>
+    <p> ページを再読み込みすると初めからになります。</p>
+    <p>↓画像をクリックまたはタップで切り替え。↓</p>
+    <script type="text/javascript">
+        let c = 0;
+        for (let j = 0; j < 5; j++) {
+        let imgs = new Array;
+        let n = 12;
+        let i;
+        for(i=0;i<n;i++){
+        imgs[i] = new Image();
+        }
+        imgs[0].src="1.png";
+        imgs[1].src="2.png";
+        imgs[2].src="3.png";
+        imgs[3].src="4.png";
+        imgs[4].src="5.png";
+        imgs[5].src="6.png"; 
+        imgs[6].src="7.png";
+        imgs[7].src="8.png";
+        imgs[8].src="9.png";
+        imgs[9].src="10.png";
+        imgs[10].src="11.png";
+        imgs[11].src="12.png";
+        function disp(img){
+        img.src=imgs[Math.round(Math.random()*(n-1))].src;
+        }
+        }
+    </script>
+    <img src="1.png" onclick="disp(this)">
+    <p>『だなもたぬき』は、たぬきが描かれたカードが画面に出てくるたびに、その人のセンスで特徴を捉えた名前を付け、全員で共有し、以降もし同じものがめくられたらその名前をいち早く叫んで、溜まったカードを獲得し、集めた枚数を競うゲームです。</p>
+    <p class = "memo-shizi">↓メモに使える場所。</p>
+    <div class = "memo-shizi">
+    <textarea></textarea>
+    </div>
+</body>
+</html>
